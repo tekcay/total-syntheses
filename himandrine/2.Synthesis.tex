@@ -1,0 +1,340 @@
+\section*{SYNTHESIS}
+\subsection*{Convergent aminoester building}
+Commercially available 2-methylfuran \cmpd{2-methylfuran}\footnote{54.40 euros for 100mL on Sigma-Aldrich} is treated with bromide ammonium and tetraethylammonium perchlorate in methanol under electric current with platine electrodes to give (\textit{E})-\cmpd{synthon01.one} in reasonable 57\% yield\autocites{Warriner07,Torii86}. An alternative route can also be considered. Oxidative cleavage of \cmpd{2-methylfuran} promoted by DMDO gives (\textit{Z})-4-oxopent-2-enal \cmpd{4-oxopent-2-enal} in 95\% yield using Kavitha et al. procedure\autocite{Kavitha07}. The aldehyde is then turned into methyl ester \cmpd{methylester} with Oxone in methanol\autocite{Borhan03}, and ketone is protected in the corresponding acetal to reach (\textit{Z})-\cmpd{synthon01.two}.
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Synthesis of synthon \cmpd{synthon01}\textsuperscript{\textit{a}}}
+\centering
+	\replacecmpd[TMP1]{2-methylfuran}
+    \replacecmpd[TMP2]{synthon01.one}
+    \replacecmpd[TMP3]{synthon01.two}
+    \replacecmpd[TMP4]{4-oxopent-2-enal}
+    \replacecmpd[TMP5]{methylester}
+		\includegraphics[scale=0.65]{data/Synth1b.eps}	
+    \label{scheme:Synth1} 
+     \\
+ \justify 
+ \textsf{\scriptsize{\textsuperscript{\textit{a}}Reagents and conditions : (a) \ch{NH4Br, Et4NClO4}, MeOH, Pt electrodes; (b) DMDO,acetone, rt (c) Oxone, MeOH ; (d) MeOH, ethylene glycol, \textit{p}-TsOH.}}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+ Reductive ozonolysis of commercially available 1-methylcyclohex-1-ene \cmpd{1-methylcyclohex-1-ene}\footnote{33.70  for 5G on Sigma Aldrich} followed by treatment with paratoluene sulfonic acid and dimethylsulfide gives 6-oxoheptanal \cmpd{6-oxoheptanal} in 94\% as demonstrated in Bafilomycin synthesis by Chevalley and coworkers\autocite{Chevalley13}(\ref{scheme:Synth2}).
+A one-pot sequence should turn the aldehyde into the corresponding aziridine\autocite{Pellissier14}. Using J\o{}rgensen asymmetric $\alpha$-chlorination of aldehydes\autocite{Jorgensen04} \textit{via} enamine catalysis with a proline derivative, compound \cmpd{alpha_chloride_al} should be obtained with yield around 90\%  and 80\% enantiomeric excess. Stereochemistry is not explained by enamine geometry as DFT calculations prove that even a phenyl replacing the amide group on the proline would not shield enough to induce any sterocontrol on the nucleophilic enamine-carbon atom\autocite{Jorgensen05}.\\
+Such selectivity can be explained by a 1,3-chlorine shift \autocites{Metzger07}{Jorgensen11} (\ref{scheme:Synth2_TS}). Kinetically controlled chlorination takes place on the more nucelophilic enamine-nitrogen atom of \cmpd{S2_TS_enamine} to give chloroiminium \cmpd{S2_TS_chloroiminium}. In those conditions R' group is closer and can shield the upper face, inducing the observed stereoselectivty. This intermediate undergoes aforementioned rearrangement to go to iminium \cmpd{S2_TS_iminium}, which gives \cmpd{S2_TS_chloro_aldehyde} after hydrolysis.\\
+Subsequent treatment of \cmpd{alpha_chloride_al} with a benzyl carbamate protected primary amine leads to $\alpha$-chloroimine which is directly reduced with sodium triacetateboronhydride into the $\alpha$-chloroamine \cmpd{alpha_chloroamine}.
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+	\captionof{scheme}{Synthesis of aminoketone \cmpd{synthon02}\textsuperscript{\textit{a}}}
+\centering
+	\replacecmpd[TMP1]{1-methylcyclohex-1-ene}
+	\replacecmpd[TMP2]{6-oxoheptanal}
+	\replacecmpd[TMP3]{alpha_chloride_al}
+    \replacecmpd[TMP4]{alpha_chloroamine}
+    \replacecmpd[TMP5]{aziridine}
+    \replacecmpd[TMP6]{synthon02}
+		\includegraphics[scale=0.65]{data/Synth2.eps}
+    	\label{scheme:Synth2}
+        \\
+ \justify    \textsf{\scriptsize{\textsuperscript{\textit{a}}Reagents and conditions : (a) \ch{O3}, MeOH, \ch{CH2Cl2}, 1h, \SI{-78}{\celsius}; \ch{Me2S}, 10 min; \SI{-78}{\celsius} to rt, overnight. (b) NCS (1.3 eq.) (c) \ch{NH2Cbz, NaBH(OAc)3}, \SI{4}{\angstrom} Ms, \SI{-78}{\celsius}; (d) KOH/THF:\ch{H2O} (1:1), \SI{65}{\celsius}; (e) \ch{NaCNBH3}, \textit{p}-TsOH, THF, rt.}}
+ \vspace{4pt}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+\vspace{-20pt}
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Origin of sterocontrol for \cmpd{alpha_chloride_al}}
+\centering
+	\replacecmpd[TMP1]{S2_TS_enamine}
+	\replacecmpd[TMP2]{S2_TS_chloroiminium}
+	\replacecmpd[TMP3]{S2_TS_iminium}
+    \replacecmpd[TMP4]{S2_TS_chloro_aldehyde}
+		\includegraphics[scale=0.65]{data/Synth2_TS.eps}	
+    \label{scheme:Synth2_TS}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+\vspace{-20pt}
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Intermolecular Michael coupling}
+\centering
+	\replacecmpd[TMP1]{synthon01}
+	\replacecmpd[TMP2]{synthon02}
+	\replacecmpd[TMP3]{catalyst}
+    \replacecmpd[TMP4]{ketone01}
+		\includegraphics[scale=0.65]{data/Synth3.eps}
+    \label{scheme:Synth3}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+\newpage
+This protecting group was chosen for its resistance to various conditions and up to medium basic conditions. One other advantage is that it can be removed in harsh basic conditions, which is something that can be done while doing another reaction, meaning no time wasted for deprotection. Deprotonation of \cmpd{alpha_chloroamine} with potassium hydroxide provides intramolecular aziridination product \cmpd{aziridine} which is then selectively reduced with sodium cyanoborohydride  to give synthon \cmpd{synthon02}\autocite{Iqbal02}.\\
+Ester \cmpd{synthon01} and ketone \cmpd{synthon02} are coupled \textit{via} an enamine catalyzed Michael addition to give ketone \cmpd{ketone01} (\ref{scheme:Synth3}). Stereochemistry is controlled by the proline derivative side-chain\autocite{Nayak16}.
+\subsection*{$\iota$-lactam}
+%----------------------------------
+%----------------------------------
+Aminoester \cmpd{ketone01} is treated in basic conditions, saponification gives corresponding carboxylic acid. Triethylamine in presence of Yamaguchi's reagent \cmpd{Yamaguchi} generates corresponding anhydride \cmpd{anhydride} (\ref{scheme:Synth4}). Reflux of the solution should remove benzoate and addition of the Steglich base DMAP should provide the 10-member ring $\iota$-lactam \cmpd{lactam} with great chemoselectivity. Using Charette and coworkers procedure\autocite{Charette10}, lactam is chemoselectively reduced to corresponding imine \cmpd{imine01}. Stereochemistry might be important for the next step, it can be assumed that temperature could have a potent control in that aspect.
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Yamaguchi macrolactamisation}
+\centering
+	\replacecmpd[TMP1]{ketone01}
+	\replacecmpd[TMP2]{Yamaguchi}
+    \replacecmpd[TMP3]{anhydride}
+	\replacecmpd[TMP4]{lactam}
+    \replacecmpd[TMP4]{imine01}
+		\includegraphics[scale=0.65]{data/Synth4.eps}
+    \label{scheme:Synth4}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+\subsection*{Ring contraction towards dienophile}
+%----------------------------------
+%----------------------------------
+Treatment of \cmpd{imine01} with lithium diisoproylamine produces corresponding enolate which would attack on the imine, providing the desired quinolizidine \textit{via} a Mannich reaction (\ref{scheme:Cascade01}).
+Treatment of \cmpd{imine01} with LDA can give two enolate regioisomers \cmpd{enolate.one} and \cmpd{enolate.two} (\ref{scheme:Cascade02}). Further attack on imine leads to quinolidine \cmpd{quinolizidine} and azabicyclo[5.2.0]nonane \cmpd{7+4}, respectively. It is not going too far by postulating that formation of that last product is unlikely and the reaction would prefer two 6-member rings over a less-favored 8-member ring and a very strained cyclobutane. Lithium amide is trapt by diterbutyldicarbonate (\ch{Boc2O}) to provide quinolozidine \cmpd{acetal03}. Boc protecting group is chosen for its orthogonal removal with acetal in strong acid conditions.  Considering stereochemistry, the desired \textit{syn}-adduct might not be the major diastereoisomer. Besides the  other \textit{syn}-enantiomer can also be formed. No obvious transition state model could anticipate any sort of control. However a chiral Lewis acid could possibly favor the formation of the right product, a specific methodology must be developped for this particular step. \\
+Once the quinolizidine in hand, the piperidine system must be achieved. Boc and acetal removal with trifluoroacetic acid frees the amine that can readily add on the ketone to generate corresponding enamine \cmpd{enamine01} with great regioselectivity. The other position would be an anti-Bredt olefin which is greatly thermodynamically unfavored.
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{$\iota$-lactam ring contraction}
+\centering
+    \replacecmpd[TMP1]{imine01}
+	\replacecmpd[TMP2]{mesylate}
+		\includegraphics[scale=0.65]{data/Cascade01.eps}	
+    \label{scheme:Cascade01}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+\vspace{-20pt}
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Enamine formation}
+\centering
+    \replacecmpd[TMP1]{acetal03}
+	\replacecmpd[TMP2]{enamine01}
+	\includegraphics[scale=0.65]{data/Enamine.eps}
+    \label{scheme:Enamine}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+\newpage
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Ring contraction mechanism}
+\centering
+    \replacecmpd[TMP1]{imine01}
+	\replacecmpd[TMP2]{enolate.one}
+    \replacecmpd[TMP3]{enolate.two}
+    \replacecmpd[TMP4]{quinolizidine}
+	\replacecmpd[TMP5]{7+4}
+    \replacecmpd[TMP6]{acetal03}
+		\includegraphics[scale=0.65]{data/Cascade02.eps}	
+    \label{scheme:Cascade02}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+%----------------------------------
+%----------------------------------
+\subsection*{Concurrent diene building}
+%----------------------------------
+%----------------------------------
+Commercially available cyclohexenone \cmpd{cyclohexenone}\footnote{84.20 euros for 25mL on Sigma-Aldrich} is submitted to triphenylphospine which adds in a 1,4 Michael addition to generate the enolate (\ref{scheme:Diene}). Subsequent addition of nitroethylene as a Michael acceptor gives product \cmpd{MBH_adduct} through a MBHR\autocite{Morita68}. Ketone \cmpd{MBH_adduct} is reduced using Corey-Bakshi-Shibata chiral oxazaborolidine catalyst \cmpd{CBS}\autocite{Corey87}, affording corresponding allylic alcohol \cmpd{cyclohexanol} as a major product. Accordingly to exposed transition state, hydride attacks on the \textit{Si} face to minimize 1,3 diaxial strain. Basic treatment with methyl iodide gives ether \cmpd{cyclohexane_methoxy} \textit{via} simple Williamson etherification. Henry reaction followed by elimination of the resulting $\beta$-nitro alcohol to get nitro alkene \cmpd{Diene} using Vergari and coworkers procedure\autocite{Vergari08}.
+\newpage
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Diene synthesis}
+\centering
+	\replacecmpd[TMP1]{cyclohexenone}
+	\replacecmpd[TMP2]{MBH_adduct}
+	\replacecmpd[TMP3]{CBS}
+    \replacecmpd[TMP4]{cyclohexanol}
+    \replacecmpd[TMP5]{cyclohexane_methoxy}
+    \replacecmpd[TMP6]{Diene}
+		\includegraphics[scale=0.65]{data/Diene.eps}	
+    \label{scheme:Diene}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+%----------------------------------
+%----------------------------------
+\subsection*{Inverse electron-demand Diels-Alder}
+%----------------------------------
+%----------------------------------
+Once with both enamine \cmpd{enamine01} and diene \cmpd{Diene} in hand, next step is to proceed to an inverse electron-demand Diels-Alder (\ref{scheme:DAINV}). This reaction should give access to the decaline skeleton and generate the nitroalkene \cmpd{nitroalkene01} which can be easily turned into another functional group.
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Intermolecular inverse electron-demand Diels-Alder reaction}
+\centering
+	\replacecmpd[TMP1]{enamine01}
+	\replacecmpd[TMP2]{Diene}
+    \replacecmpd[TMP3]{nitroalkene01}
+		\includegraphics[scale=0.65]{data/DAINV.eps}		
+    \label{scheme:DAINV}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+The great advantage of this couple is that is completly regioselective due to the electronic distribution. Diene is comparable to a Michael acceptor because of its electron-withdrawing group, making the position in $\beta$ really electrophilic and thus the biggest orbital lobe in the LUMO (\ref{fig:DAINV_orbitals}). Enamine being usually the most nucleophilic on the carbon-atom in $\beta$, the biggest orbital lobe in the HOMO is in that position. Following the frontier orbital theory, the reaction should take place in those two particular poles, providing expected regiocontrol.
+In presence of electron-withdrawing group like the nitro and the nitrogen-atom, one can expect secondary orbital interactions (SOI) which should favor an \textit{endo} transition state\autocite{Xu17}(\ref{fig:DAINV_TS}).
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\centering
+		\includegraphics[scale=0.65]{data/DAINV_orbitals.eps}	
+    \captionof{figure}{Assumed frontier orbitals}
+        \label{fig:DAINV_orbitals}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+Although this theory often works, it has been questioned  by Salvatella and coworkers in 2004\autocite{Salvatella04}, by pointing out core-shell interactions prevail over SOI. Finally facial selectivity must also be brought to control the stereochemistry of C5. Maybe the pseudo equatorial position of the chain in \cmpd{nitroalkene.one} is enough to favor this product over \cmpd{nitroalkene.two} where the chain is in axial position.
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\centering
+	\replacecmpd[TMP1]{nitroalkene.one}
+	\replacecmpd[TMP2]{nitroalkene.two}
+    \replacecmpd[TMP3]{nitroalkene.three}
+    \replacecmpd[TMP4]{nitroalkene.four}
+		\includegraphics[scale=0.65]{data/DAINV_TS2.eps}	
+    \captionof{figure}{Putative Diels-Alder transition states}
+        \label{fig:DAINV_TS}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+\subsection*{Nitroalkene to ketone}
+%----------------------------------
+%----------------------------------
+Ketone \cmpd{nitroalkene01} is protected to the corresponding acetal \cmpd{acetal} with paratoluenesulfonic acid (\ref{scheme:Synth5}). Reduction of nitroalkene \cmpd{nitroalkene}  must be mild to avoid Michael dimerization by nitronate intermediate. Subsequent acidic hydrolysis of the resulted nitroalkane gives cyclohexanone \cmpd{cyclohexanone}. \\
+Methyl group of the piperidinone ring should bring diastereocontrol as it shields the \textit{Re} face and obstructs the attach of the hydrid. Yet a mixture should be obtained containing both diastereoisomers \cmpd{cyclohexanone.one} and \cmpd{cyclohexanone.two} with a preference for the (\textit{S})-\cmpd{cyclohexanone.one} which is not the desired stereochemistry. This enantiopoor mixture could be enriched by treatment with LDA to get more of (\textit{R})-\cmpd{cyclohexanone.two} \textit{via} epimerization in thermodynamic conditions. Carbon chain wearing the methoxy group should therefore end up in equatorial position.
+\newpage
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Reduction and epimerization of nitroalkene\textsuperscript{\textit{a}}}
+\centering
+    \replacecmpd[TMP1]{nitroalkene}
+	\replacecmpd[TMP2]{acetal}
+    \replacecmpd[TMP3]{cyclohexanone.one}
+	\replacecmpd[TMP4]{cyclohexanone.two}
+		\includegraphics[scale=0.65]{data/Synth5.eps}
+    \label{scheme:Synth5}
+\\
+\justify
+\textsf{\scriptsize{\textsuperscript{\textit{a}}Reagents and conditions : (a) \ch{(CH2OH)2}, \textit{p}-TsOH cat.; (b) \ch{LiBHOAc3, H3O+}; (c) LDA.}}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+%----------------------------------
+%----------------------------------
+\subsection*{C ring closure}
+%----------------------------------
+%----------------------------------
+To prepare the intramolecular aldolisation, several functional groups adjustments are necessary. It consists in converting ketone on C-1 to hydroxyketone respectively on C-14 and C-17 (\ref{scheme:Synth6}). This transformation is described in the total synthesis of Taxol by Holton\autocite{Holton94}, affording corresponding directly acetylated hydroxyketone quantitatively. Although this method looked very attractive, use of toxic and very dangerous benzeneseleninic anhydride in four equivalents is a deal breaker. \\
+Another work from Zhang and Lee in total synthesis of ($\pm$)-Platensimycin\autocite{Zhang2013} showcases similar output (\ref{scheme:Platensimycin}). First $\alpha$-hydroxylation of ketone \cmpd{Platensimycin.one} proceeds \textit{via} Rubottom oxidation\autocite{Rubottom74} to give hydroxyketone \cmpd{Platensimycin.two} in a single diastereosiomer. Subsequent treatment with aqueous chloride acid overnight gives the desired hydroxyketone \cmpd{Platensimycin.three} by epoxide formation and subsequent facial selective opening with water that gives the hydrate, which is in equilibrium with the corresponding ketone. This approach affords good yields and diastereocontrol.\\
+In an analogous way, the bottom face of the cyclohexanone \cmpd{cyclohexanone.two} is also shielded by the piperidine cycle. Rubottom oxidation should then provide the same stereochemistry for the epoxide and thus the hydroxyl group. Subsequent rearrangement in aqueous chloride acid gives the desired hydroxyketone \cmpd{hydroxyketone01} as explained hereinabove.
+DMAP catalyzed esterification of secondary alcohol gives benzoate \cmpd{benzoate}, and remaining ketone is turned into corresponding silylated enol ether \cmpd{silylenolate01} with trimethylsilyl chloride in presence of imidazole.
+In order to complete the carbon backbone of ($-$)-Himandrine, last ring is acheived by removal of acetal in mild conditions in acetone with a catalytic amount of iodine at room temperature using Hu procedure\autocite{Hu04} (\ref{scheme:Synth7}). 
+\newpage
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Total synthesis of ($\pm$)-Platensimycin and proposed mechanism\textsuperscript{\textit{a}}}
+\centering
+    \replacecmpd[TMP1]{Platensimycin.one}
+	\replacecmpd[TMP2]{Platensimycin.two}
+    \replacecmpd[TMP3]{Platensimycin.three}
+		\includegraphics[scale=0.65]{data/Platensimycin.eps}	
+    \label{scheme:Platensimycin}
+\\
+\justify
+\textsf{\scriptsize{\textsuperscript{\textit{a}}Reagents and conditions : (a) TMSOTf, \ch{Et3N}; MMPP; (b) HCl aq. overnight.}}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+\vspace{-20pt}
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Functional groups adjustments\textsuperscript{\textit{a}}}
+\centering
+    \replacecmpd[TMP1]{cyclohexanone.two}
+	\replacecmpd[TMP2]{hydroxyketone01}
+    \replacecmpd[TMP3]{benzoate}
+	\replacecmpd[TMP4]{silylenolate01}
+		\includegraphics[scale=0.65]{data/Synth6.eps}	
+    \label{scheme:Synth6}
+\\
+\justify
+\textsf{\scriptsize{\textsuperscript{\textit{a}}Reagents and conditions : (a) TMSOTf, \ch{Et3N}; MMPP; HCl aq. overnight; (b) \ch{Et3N}, DMAP, BzCl, rt; (c) TMSCl, imidazole.}}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+\vspace{-20pt}
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Aldolisation ring closure\textsuperscript{\textit{a}}}
+\centering
+    \replacecmpd[TMP1]{silylenolate01}
+	\replacecmpd[TMP2]{ketol}
+		\includegraphics[scale=0.65]{data/Synth7.eps}
+    \label{scheme:Synth7}
+\\
+\justify
+\textsf{\scriptsize{\textsuperscript{\textit{a}}Reagents and conditions : (a) acetone, \ch{I2} (10 mol\%) then TBAF.}}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+Next, enolate is regenerated by removing silyl group with tetrabutyl ammonium fluoride and attacks the aforementioned ketone in an aldol reaction to provide ketol \cmpd{ketol}. The molecule conformation at this stage makes an attack on the \textit{Si} face impossible.
+%----------------------------------
+%----------------------------------
+\subsection*{Final modifications}
+%----------------------------------
+%----------------------------------
+Only C-16 and C-17 need to be functionnalized, and C-22 has to be implemented. To do so, a Corey-Chaychovsky reaction\autocite{Corey65} has been envisaged. Deprotonation of trimethylsulfonium also called as the Corey's reagent in DMSO gives corresponding ylide which adds on the ketone on the top face. Alcoholate then attacks on the newly linked carbon atom to release dimethylsulfide and generate the epoxide \cmpd{epoxide} as an intermediate. In presence of a Lewis acid such as trifluoroborane, epoxide undegoes ring-opening to give the one-carbon homologation product aldehyde \cmpd{aldehyde}. Treatment with Oxone\textregistered{} in methanol gives methyl ester \cmpd{ester}\autocite{Borhan03}.
+ (\ref{scheme:Synth8}).
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Corey-Chaychovsky ketone homologation\textsuperscript{\textit{a}}}
+\centering
+    \replacecmpd[TMP1]{ketol}
+	\replacecmpd[TMP2]{epoxide}
+    \replacecmpd[TMP3]{aldehyde}
+ 	\replacecmpd[TMP4]{ester}   
+		\includegraphics[scale=0.65]{data/Synth8.eps}	
+    \label{scheme:Synth8}
+\vspace{-4pt}
+\justify
+\textsf{\scriptsize{\textsuperscript{\textit{a}}Reagents and conditions : (a) DMSO, trimethylsulfonium; \ch{BF3.Et2O}; (b) Oxone, MeOH, rt.}}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+\vspace{-20pt}
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Sharpless ester dehydrogenation\textsuperscript{\textit{a}}}
+\centering
+    \replacecmpd[TMP1]{ester}
+	\replacecmpd[TMP2]{Himandrine1}
+    \replacecmpd[TMP3]{selenoester}
+ 	\replacecmpd[TMP4]{selenoxide}   
+		\includegraphics[scale=0.65]{data/Synth9.eps}
+    \label{scheme:Synth9}
+\\
+\justify   \textsf{\scriptsize{\textsuperscript{\textit{a}}Reagents and conditions : (a) LDA, THF, \SI{-78}{\celsius}; PhSeBr; \ch{H2O2}.}}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+Last modification to get himandrine is to install a double bond bewteen C-16 and C-17. To do so, the Sharpless method has been chosen\autocite{Sharpless73}. Ester \cmpd{ester} is turned into corresponding enolate with LDA and attacks phenylselenyl bromide to give the (\textit{S}) $\alpha$-seleno ester \cmpd{selenoester} (\ref{scheme:Synth9}). Once more the bottom face is shielded so the seleno ester should be in equatorial position. Treatment with hydrogen peroxide oxidizes the selenium atom leading to selenoxide \cmpd{selenoxide} which eliminates at room temperature to the desired olefin and thus ($-$)-Himandrine \cmpd{Himandrine1}.

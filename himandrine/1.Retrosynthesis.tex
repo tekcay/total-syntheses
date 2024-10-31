@@ -1,0 +1,174 @@
+\section*{RETROSYNTHESIS}
+First insights were to build piperidine cycle \textit{via} an aza-Diels-Alder, here an imine Diels-Alder (IDA), using imine \cmpd{Dienophile01} as the dienophile and a derivative of the Danishefsky's diene \cmpd{Diene01} (\ref{scheme:Retro_approaches}). However no precedent in the litterature is mentioning any control for the \textit{exo/endo} product. Therefore it has been decided to proceed differently. It has been envisioned to build the right moiety with the indolizidine block first and then proceed to build the decaline block \textit{via} an inverse electron-demand Diels-Alder (DA\textsubscript{INV}) with enamine \cmpd{Dienophile02} as the rich dienophile and cyclohexene \cmpd{Diene02} as the electron-poor diene with an electron withdrawing group wisely placed. This way 
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Envisaged DA retroysnthesis}
+\centering
+	\replacecmpd[TMP1]{Dienophile01}
+	\replacecmpd[TMP2]{Dienophile02}
+	\replacecmpd[TMP3]{Diene01}
+    \replacecmpd[TMP4]{Diene02}
+		\includegraphics[scale=0.65]{data/Retro_approaches.eps}		
+    \label{scheme:Retro_approaches}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+should provide a better control as the \textit{endo} product is usually the major product in those reactions\autocite{Xu17}. Double bond could be made with various types of reactions like eliminations, Wittig or Peterson olefinations and so on. Yet it has been chosen to create it at the very end of the synthesis \textit{via} a Sharpless ester dehydrogenation\autocites{Reich73}{Sharpless73} to get the saturated ester (\ref{scheme:Retro1}). One can envision a latter addition of that \textit{exo}-cyclic carbon considering a simple carbonyl homologation. That would give ketol \cmpd{ketol}, which suggests a classical intramolecular aldolisation from enolate \cmpd{enolate02}. Few FGI could lead to nitroalkene \cmpd{nitroalkene01}, which reveals potential for a Diels-Alder reaction.
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{C ring retrosynthesis}
+\centering
+	\replacecmpd[TMP1]{Himandrine1.three}
+	\replacecmpd[TMP2]{ketol}
+	\replacecmpd[TMP3]{enolate02}
+    \replacecmpd[TMP4]{nitroalkene01}
+		\includegraphics[scale=0.65]{data/Retro1.eps}	
+    \label{scheme:Retro1}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+Nitroalkene \cmpd{nitroalkene01} can be seen as an adduct of inverse electron-demand Diels-Alder between electron-poor diene \cmpd{Diene} and electron-rich enamine \cmpd{enamine01} (\ref{scheme:Retro2}).
+Diene \cmpd{Diene} is built \textit{via} Henry reaction from cyclohexene \cmpd{cyclohexene_methoxy} (\ref{scheme:Retro_Diene}). Methoxy with correct stereochemistry is made from corresponding ketone \cmpd{MBH_adduct}. 
+A Morita-Baylis-Hillman reaction (MBHR)\autocite{Morita68} between nitroethylene and commercially available cyclohexenone \cmpd{cyclohexenone}. Enamine \cmpd{enamine01} is obtained from elimination from terminal acetate on pyrrolidine \cmpd{pyrrolidine} (\ref{scheme:Retro_Dienophile}).
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Proposed DA\textsubscript{INV}}
+\centering
+	\replacecmpd[TMP1]{nitroalkene01}
+	\replacecmpd[TMP2]{enamine01}
+	\replacecmpd[TMP3]{Diene}
+		\includegraphics[scale=0.65]{data/Retro2.eps}	
+    \label{scheme:Retro2}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+\vspace{-20pt}
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Diene retrosynthesis}
+\centering
+	\replacecmpd[TMP1]{Diene}
+	\replacecmpd[TMP2]{cyclohexene_methoxy}
+	\replacecmpd[TMP3]{MBH_adduct}
+    \replacecmpd[TMP4]{cyclohexenone}
+		\includegraphics[scale=0.65]{data/Retro_Diene.eps}
+        \label{scheme:Retro_Diene}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+Opening of epoxide \cmpd{quinolizidinone} on the most substituted side turns out to be impossible as no precedent in the litterature details such regioselectivity for secondary cyclic amine, or with metals. Besides no thermodynamic factor can help here  as both position would give 5 or 6-member ring which are quite equally favorable. Ring contraction from mesylate \cmpd{mesylate} leads to quinolizidinone \cmpd{quinolizidinone} \textit{via} epoxide ring opening.
+%----------------------------------
+%----------------------------------
+%\begin{table}
+%\begin{tabu}{X[c]}
+\begin{figure''}
+%\begin{subfigure}
+%\captionof{scheme}{Dienophile retrosynthesis}
+\captionof{scheme}{Dienophile retrosynthesis first insights}
+\centering
+	\replacecmpd[TMP1]{enamine01}
+	\replacecmpd[TMP2]{pyrrolidine}
+	\replacecmpd[TMP3]{mesylate}
+    \replacecmpd[TMP4]{quinolizidinone} 
+ 		\includegraphics[scale=0.65]{data/Retro_Dienophile.eps}	 
+    \label{scheme:Retro_Dienophile}
+    %\end{subfigure}
+    \end{figure''}
+   % \end{tabu}
+%\end{table}
+%----------------------------------
+%----------------------------------
+Ogasawara and coworkers have used piperidin-3-mesylate ring contraction in 2002\autocite{Tanaka02} to have access to pyrrolidine (\ref{scheme:Tanaka_Contraction}). Compound \cmpd{mesylate02} undergoes intramolecular cyclization under basic conditions \textit{via} a \ch{SN2} mechanism with the amine lone pair attacking the carbon atom wearing the mesylate to provide aziridinium \cmpd{aziridinium02}. This compound can be opened by acetate either on less or more substituted sites to give pyrrolidine acetate \cmpd{acetate01} and piperidine acetate \cmpd{acetate02}. Basic conditions favor the less substituted side attack in a 4:1 ratio. It was consequently thought about passing by mesylate \cmpd{mesylate} as an intermediate.
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Ogasawara piperidine ring contraction}
+\centering
+	\replacecmpd[TMP1]{mesylate02}
+	\replacecmpd[TMP2]{aziridinium02}
+	\replacecmpd[TMP3]{acetate01}
+    \replacecmpd[TMP4]{acetate02}
+ 		\includegraphics[scale=0.65]{data/Tanaka_Contraction.eps}	
+    \label{scheme:Tanaka_Contraction}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+\vspace{-20pt}
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Dienophile retrosynthesis definitive pathway}
+\centering
+	\replacecmpd[TMP1]{enamine01}
+	\replacecmpd[TMP2]{quinolizidinone}
+ 		\includegraphics[scale=0.65]{data/Retro_Dienophile2.eps}	
+    \label{scheme:Retro_Dienophile2}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+Yet epoxide incorporation was not retained because of similar reactivity with carbonyl. A more straightforward path is chosen by an amine and ketone intramolecular coupling (\ref{scheme:Retro_Dienophile2}).\\
+Building of quinolizidinone is very demanding. Multiple approaches were envisaged (\ref{scheme:Retro_quinolizidinone}), such as an intramolecular Michael addition of an amine to an $\alpha$,$\beta$-unsaturated cyclohexenone. Different Diels-Alder reactions (DA) were are also considered. Intermolecular reaction would not provide a ketone at the right place. Intramolecular would look very promising because the ketone would be ideally placed and there should be stereocontrol aswell. However in both of these cases there would be several issues. Both diene and dienophile are quite electron-rich making the reaction harder. Besides regioselectivity could be off aswell, so it appeared that trying to build that quinolizidine skeleton was not the right approach.
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Quinolizidinone retrosynthesis abandoned pathways}
+\centering
+	\replacecmpd[TMP1]{linear}
+	\replacecmpd[TMP2]{quinolizidinone}
+	\replacecmpd[TMP3]{intermolecularDA}
+    \replacecmpd[TMP4]{intramolecularDA}
+		\includegraphics[scale=0.65]{data/Retro_quinolizidinone.eps}		
+    \label{scheme:Retro_quinolizidinone}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+If building two 6-member rings from an already existing 6-member ring or linear chain is difficult, then a ring contraction might be the answer. That is what Fukuyama and his group did in 2004 in the total synthesis of ($-$)-Strychnine\autocite{Fukuyama04}, in which he performs a 9-member ring contraction to get three cycles in a one-pot procedure (\ref{scheme:Strychnine}). 
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Fukuyama total synthesis of ($-$)-Strychnine}
+\centering
+	\includegraphics[scale=0.65]{data/Strychnine.eps}	
+    \label{scheme:Strychnine}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+Thinking about that very inspiring work, it was then considered to build the quinolizidinone from a 10-member ring contraction. Very efficient methods to build such big cycles exist, such as olefins and alkynes ring closure metathesis, and Yamaguchi macrolactonisation and macrolactamisation. As the first methods use metal complex like the Grubbs catalyst and because the cycle contains a nitrogen atom, the Yamaguchi lactamisation was preferred. This method showed real efficacy, as reported in various total syntheses\autocites{Zhu99}{Sih98}. Quinolizidinone \cmpd{quinolizidinone} can thus come from $\iota$-lactam \cmpd{lactam} (\ref{scheme:Retro3}), which can be reduced to the imine \cmpd{imine01}. An intramolecular Michael reaction between an enolate generated from the ketone with the imine should provide the quinolizidinone system. Retrosynthesis of the lactam gives aminoester \cmpd{ketone01}.
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Quinolizidinone synthesis}
+\centering
+	\replacecmpd[TMP1]{quinolizidinone}
+	\replacecmpd[TMP2]{imine01}
+	\replacecmpd[TMP3]{lactam}
+    \replacecmpd[TMP4]{ketone01}
+		\includegraphics[scale=0.65]{data/Retro3.eps}	
+    \label{scheme:Retro3}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+Introduction of chirality in $\alpha$ of the amine suggested different pathways. It has been envisioned starting from \textit{L}-alanine because it contains that $\alpha$-aminomethyl with the right stereochemistry, and is also readily available and cheap. However the lack of two carbon atoms in the chain would need two successive carboxylic acid  homologations using Arndt-Eistert reaction. Besides its use of silver salt, it would also need a FGI to turn resulted carboxylic acid or ester into the desired acetal protected aldehyde.
+%----------------------------------
+%----------------------------------
+\begin{figure''}
+\captionof{scheme}{Aminoester \cmpd{ketone01} synthesis}
+\centering
+	\replacecmpd[TMP1]{ketone01}
+	\replacecmpd[TMP2]{synthon02}
+	\replacecmpd[TMP3]{synthon01}
+    \replacecmpd[TMP4]{oxyenal}
+    \replacecmpd[TMP5]{2-methylfuran}
+    \replacecmpd[TMP6]{aziridine}
+    \replacecmpd[TMP7]{6-oxoheptanal}
+    \replacecmpd[TMP8]{methylcyclohexene}
+		\includegraphics[scale=0.65]{data/Retro4.eps}	
+    \label{scheme:Retro4}
+\end{figure''}
+%----------------------------------
+%----------------------------------
+It was finally thought of introducing that particular chiral center \textit{via} reduction of an asymmetric aziridine like \cmpd{aziridine} (\ref{scheme:Retro4}), which can be synthesized from aldehyde \cmpd{6-oxoheptanal}. This aldehyde is made from commercially available cyclohexene \cmpd{methylcyclohexene} \textit{via} asymmetric  reductive ozonolysis. Carboxylic acid \cmpd{synthon01} should be easily accessible from corresponding $\alpha$,$\beta$-unsaturated aldehyde \cmpd{oxyenal}, which can be surprinsingly obtained from 2-methylfuran \cmpd{2-methylfuran}\autocite{Greatrex14}. Herein a synthetic route is proposed.

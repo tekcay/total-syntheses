@@ -1,0 +1,185 @@
+\RequirePackage{fix-cm} % pour lettrine
+\documentclass[9pt, a4paper, twocolumn]{article}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{yellowJACS}{RGB}{244,239,202}
+\usepackage[top=0.5cm, bottom=1cm, left=1.8cm, right=1.8cm,
+ headheight=68pt, % as per the warning by fancyhdr
+  includehead,includefoot,
+  heightrounded,
+  ]{geometry}
+\usepackage{newtxtext,newtxmath} % times font for both maths and normal txt
+%-------------------------
+% chemistry packages
+%-------------------------
+\usepackage[runs=2]{auto-pst-pdf} % for chemstyle
+\usepackage{chemmacros}
+\chemsetup{modules={scheme, reactions,spectroscopy}}
+\chemsetup[spectroscopy]{delta=(ppm),pos-number=sub,use-equal, format=\bfseries, connector = { } }
+\usepackage{chemstyle}
+\usepackage{chemnum} % for compound numbers
+\setchemnum{replace-style = \fontsize{7}{12}\rmfamily}
+\usepackage{siunitx} % for degree
+\usepackage[]{abstract}
+%-------------------------
+% other packages
+%-------------------------
+\usepackage{authblk} % author affiliation
+%-------------------------
+%-------------------------
+\usepackage{ragged2e} % enables \justify
+%-------------------------
+\usepackage{etoolbox}
+\makeatletter
+% patch \maketitle so that it doesn't center
+\patchcmd{\@maketitle}{center}{flushleft}{}{}
+\patchcmd{\@maketitle}{center}{flushleft}{}{}
+% patch \maketitle so that the font size for the title is normal
+\patchcmd{\@maketitle}{\LARGE}{\normalsize}{}{}
+
+% patch the patch by authblk so that the author block is flush left
+\def\maketitle{{%
+  \renewenvironment{tabular}[2][]
+    {\begin{flushleft}}
+    {\end{flushleft}}
+  \AB@maketitle}}
+\makeatother
+
+% a couple of other settings
+\renewcommand\Authands{ and }
+\renewcommand\Authfont{\normalfont\normalsize}
+\renewcommand\Affilfont{\normalfont\normalsize}
+%-------------------------
+%-------------------------
+%-------------------------
+\title{\textbf{\textsf{\LARGE{Total Synthesis of ($-$)-Himandrine}}}}
+\date{}
+\author[$\dag$]{\Large{Baptiste Abadie}}
+\author[$\dag$]{\Large{Hugo Moenner}}
+\author[*,$\dag$]{\Large{Pierre Bouillac}}
+\affil[$\dag$]{\textit{Universit\'{e} de Bordeaux, Talence, France}}
+%-------------------------
+%-------------------------
+%\usepackage{needspace} % page break
+%-------------------------
+\usepackage{graphicx}
+%-------------------------
+%\usepackage[section]{placeins} % Garde les float dans leur section
+%-------------------------
+\usepackage{chngcntr} % figurecount
+%-------------------------
+\usepackage{amssymb} % pour carré comme puce
+%-------------------------
+\usepackage{colortbl} % pour couleur bordure tableau
+\usepackage{array} % pour longueur bordure tableau
+%-------------------------
+\usepackage{mdframed} % cadre coloré
+\newmdenv[
+hidealllines=true,
+backgroundcolor=yellowJACS,
+topline=true,
+bottomline=true,
+linewidth=1pt,
+linecolor=Blue
+]{mybox}
+%-------------------------
+\newmdenv[
+leftmargin=-22pt,
+rightmargin=22pt,
+hidealllines=true,
+backgroundcolor=white,
+topline=true,
+bottomline=true,
+linewidth=1pt,
+linecolor=Blue,
+]{figure'}
+%-------------------------
+\newmdenv[
+hidealllines=true,
+backgroundcolor=white,
+topline=true,
+bottomline=true,
+linewidth=1pt,
+linecolor=Blue,
+]{figure''}
+%-------------------------
+%-------------------------
+\usepackage{lettrine}
+\setlength{\DefaultNindent}{0pt} % read the doc about it
+%-------------------------
+\setlength{\fboxsep}{5pt}
+\usepackage{fancyhdr} % entête
+\pagestyle{fancy}
+\fancyhead{}
+\lhead{\textcolor{Blue}{\textsf{{Journal of the American Chemical Society}}}}
+\rhead{\colorbox{Blue}{\textcolor{white}{\textsf{   Communication   }}}}
+%\renewcommand{\headrulewidth}{1.25pt}
+%\renewcommand{\headrule}{\hbox to \headrulewidth{\color{Blue}\leaders\hrule height \headrulewidth\hfill}}
+\setlength\headheight{18pt} 
+\setlength\headsep{20pt} 
+\fancyfoot{}
+\lfoot{\includegraphics[scale=0.15]{data/ACS.eps}}
+\cfoot{\footnotesize{\textsf{\textbf{\thepage}}}}
+\rfoot{\textsf{\tiny{\copyright{}}\scriptsize{ 2018 American Chemical Society}}}
+\setlength\footskip{40pt}
+%-------------------------
+\fancypagestyle{first}{
+\fancyhead{}
+\lhead{\includegraphics[scale=0.2]{data/JACS.eps}}
+}
+\setlength\headheight{38pt} 
+\setlength\headsep{30pt} 
+%-------------------------
+\usepackage[margin=0pt,
+font={footnotesize,it,sf},
+labelfont=bf,
+labelsep=endash,
+]{caption} % Modify captions style
+\usepackage{floatrow}
+\captionsetup{justification=raggedright,singlelinecheck=false} %flush caption left
+%-------------------------
+%-------------------------
+%\newenvironment{frameenv}[1]
+ %   {\begin{figure"}
+\renewcommand{\thefootnote}{$\diamond$} %footnote with symbol 
+%-------------------------
+% Modify title style
+%-------------------------
+\usepackage{titlesec}
+ %------------------------
+ %-------------------------
+ \titleformat{name=\section,numberless}[block]{\needspace{50pt}\large\normalfont\sffamily\bfseries\color{Blue}}{\color{Blue}{$\blacksquare$}}{6pt}{\large\normalfont\sffamily\bfseries}
+ %-------------------------
+\titleformat{name=\subsection,numberless}[block]{\needspace{20pt}\large\bf\sf}{}{6pt}{\large\normalfont\sffamily\bfseries}
+%-------------------------
+% biblio packages
+%-------------------------
+\usepackage[
+	backend=biber,
+    autocite = superscript,
+	style=chem-acs,
+	]{biblatex} 
+\bibliography{biblio}
+\renewcommand{\bibfont}{\footnotesize}
+%-------------------------
+% let's get it started
+%----------------------
+\begin{document}
+%\sloppy
+%-------------------------
+%-------------------------
+% Main matter
+%-------------------------
+%-------------------------
+%-------------------------
+%\input{0.Introduction}
+%input{1.Retrosynthesis}
+\input{2.Synthesis}
+\setcounter{section}{0}
+%\input{3.CCL}
+% Biblio
+%-------------------------
+%\printbibliography[title = {REFERENCES}]
+%-------------------------
+%-------------------------
+\end{document}
+
